@@ -2,10 +2,10 @@
 
 
 :root {
-    --color-primaria: #000000;
+    --color-primaria: #E9ECF8;
     --color-secundaria: #F6F6F6;
-    --color-terciaria: #22D4FD;
-    --color-hover: #272727;
+    --color-terciaria: #0A3871;
+    --color-hover: #0A3871;
 
     --fuente-krona: 'Krona One', sans-serif;
     --fuente-montserrat: 'Montserrat', sans-serif;
@@ -19,7 +19,7 @@
 body{
     box-sizing: border-box;
     background-color: var(--color-primaria);
-    color: var(--color-secundaria);
+    color: var(--color-terciaria);
 }
 
 .header{
@@ -40,7 +40,6 @@ body{
 }
 
 
-
 .presentacion {
     padding: 5% 15%;
     display: flex;
@@ -52,69 +51,79 @@ body{
     width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 600px;
 }
 
 
 .presentacion__contenido__titulo{
     font-size: 2rem;
-    font-family: var(--fuente-krona);
+    font-family: var(--color-terciaria);
+    background-color: var(--color-primaria); /* Color de fondo del botón */
+    border: none;
 }
 
-.titulo-destaque {
-    color: var(--color-terciaria); ;
+.presentacion__Texto_Signo {
+    display: flex;
+    flex-direction: row; /* Cambia la dirección principal a horizontal */
+    font-size: 1rem;
+    gap: 3px;
+}
+
+.presentacion__Texto_pegado {
+    display: flex;
+    font-size: 1rem;
+    gap: 10px;
 }
 
 .presentacion__contenido__texto{
-    font-size: 1.5rem;
+    font-size: 0.7rem;
     font-family: var(--fuente-montserrat);
 }
 
 .presentacion__enlaces{
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     gap: 32px;
 }
 
-.presentacion__enlaces__subtitulo{
-    font-family: var(--fuente-krona);
-    font-weight: 400;
-    font-size: 1.5rem;
-}
+
 .presentacion__enlaces__link{
       display: flex;
       justify-content: center;
-      gap: 16px;
+      gap: 1px;
       border: 2px solid var(--color-terciaria);
       width: 50%;
       text-align: center;
-      border-radius: 8px;
+      border-radius: 20px;
       font-size: 1.5rem;
-      font-weight: 600;
-      padding: 21.5px 0;
+      font-weight: 20;
+      padding: 3.5px 0;
       text-decoration: none;
-      color: var(--color-secundaria);
+      color: var(--color-primaria);
       font-family: var(--fuente-montserrat);
+      background-color: var(--color-terciaria); /* Color de fondo del botón */
 }
 
 .presentacion__enlaces__link:hover{
     background-color: var(--color-hover);
 }
 
+.presentacion__imagen_signo{
+    width: 3%;
+}
 .presentacion__imagen{
-    width: 50%;
+    width: 30%;
 }
 
 .footer{
-    color:var(--color-primaria);
-    background-color: var(--color-terciaria);
-    padding: 24px;
+    color:var(--color-terciaria);
+    background-color: var(--color-secundaria);
+    padding: 14px;
     text-align: center;
     font-family: var(--fuente-krona);
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 100;
 }
 
 @media (max-width: 1200px) {
